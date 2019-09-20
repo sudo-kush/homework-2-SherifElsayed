@@ -12,7 +12,7 @@ echo "Fahrenheit to Celsius Conversion:" # title
 echo # white space
 echo -n "T in degrees Fahrenheit = " # a message to the user to enter a value in Fahrenheit
 read f # read user's input
-c=$(echo "($f-32)*(5/9)" | bc -l) # convert from F to C
-printf "\nT = %f degrees Celsius\n\n" "$c" # print out the results in C
+c=$(echo "($f-32)*(5/9)+273" | bc -l) # convert from F to K
+printf "\nT = %f degrees Kelvin\n\n" "$c" # print out the results in K
 
 
